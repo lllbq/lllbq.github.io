@@ -3,7 +3,7 @@ kramdown:
   input: GFM # Github Flavored Markdown
   math_engine: katex # 防止行间公式渲染错误
 permalink: /blog/posts/:categories/:title # 博文目录
-baseurl: "/blog" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
+baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
 
 title: LllBQ
 url: http://lllbq.github.io
@@ -97,7 +97,7 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: stylesheet
   - key: href
-    value: /blog/public/css/wu-kan.css
+    value: /public/css/wu-kan.css
 - tag: link
   var:
   - key: rel
@@ -122,10 +122,10 @@ script: # 需要在正文后调用的脚本或者插件的autoloader
     value: //cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js # live2d
 - var:
   - key: src
-    value: /blog/public/js/prism.js
+    value: /public/js/prism.js
 - var:
   - key: src
-    value: /blog/public/js/mermaid.js
+    value: /public/js/mermaid.js
   - key: js
     value: //cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
   - key: stylesheet
@@ -137,7 +137,7 @@ script: # 需要在正文后调用的脚本或者插件的autoloader
 #    value: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 - var:
   - key: src
-    value: /blog/public/js/katex.js
+    value: /public/js/katex.js
   - key: js
     value: //cdn.jsdelivr.net/npm/katex/dist/katex.min.js
   - key: auto_render
@@ -148,7 +148,7 @@ script: # 需要在正文后调用的脚本或者插件的autoloader
     value: true
 - var:
   - key: src
-    value: /blog/public/js/baidu_push.js
+    value: /public/js/baidu_push.js
 
 PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己定制，我这里只导入了三个自己喜欢的插件。
   enable: true
@@ -213,14 +213,14 @@ sidebar:
     href: /blog/archive
   simple_jekyll_search:
     enable: true
-    autoloader: /blog/public/simple-jekyll-search/autoloader.js
-    stylesheet: /blog/public/simple-jekyll-search/search_box.css
+    autoloader: /public/simple-jekyll-search/autoloader.js
+    stylesheet: /public/simple-jekyll-search/search_box.css
     src: //cdn.jsdelivr.net/npm/simple-jekyll-search/dest/simple-jekyll-search.min.js
     placeholder: 搜索博文
     json: /blog/public/simple-jekyll-search/search.json
   jekyll_table_of_contents:
     enable: true
-    autoloader: /blog/public/js/jekyll_table_of_contents.js
+    autoloader: /public/js/jekyll_table_of_contents.js
     src: //cdn.jsdelivr.net/gh/ghiculescu/jekyll-table-of-contents/toc.js
   busuanzi:
     enable: true
@@ -239,7 +239,7 @@ sidebar:
     alert: <i class="fas fa-user-edit fa-fw"></i>
   run_time:
     enable: true
-    src: /blog/public/js/run_time.js
+    src: /public/js/run_time.js
     start_time: '10/04/2017 11:03:56' # 这是我第一篇CSDN博客的时间
     alert: <i class="fas fa-cog fa-spin fa-fw"></i>
     day: 天
